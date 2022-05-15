@@ -7,6 +7,9 @@ buildscript {
         compose_version = '1.1.1'
         hilt_version = '2.42'
         androidx_hilt_version = "1.0.0-alpha03"
+        room_version = '2.4.2'
+        moshi_version = '1.10.0'
+        moshi_converter_version = '2.9.0'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {

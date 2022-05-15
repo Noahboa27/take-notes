@@ -8,8 +8,8 @@ class ApiNoteMapper @Inject constructor(): ApiMapper<ApiNote?, Note> {
 
     override fun mapToDomain(apiEntity: ApiNote?): Note {
         return Note(
-            userId = apiEntity?.userId ?: Int.MAX_VALUE,
-            id = apiEntity?.id ?: Int.MAX_VALUE,
+            userId = apiEntity?.userId ?: 0,
+            id = apiEntity?.id ?: 0,
             message = apiEntity?.message.orEmpty(),
             isCompleted = apiEntity?.isCompleted ?: false
         )
