@@ -3,9 +3,9 @@ package com.example.takenotes.common.data.di
 import android.content.Context
 import androidx.room.Room
 import com.example.takenotes.common.data.cache.Cache
-import com.example.takenotes.common.data.cache.NotesDatabase
+import com.example.takenotes.takingnotes.data.cache.NotesDatabase
 import com.example.takenotes.common.data.cache.RoomCache
-import com.example.takenotes.common.data.cache.daos.NotesDao
+import com.example.takenotes.takingnotes.data.cache.daos.NotesDao
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

@@ -1,4 +1,4 @@
-package com.example.takenotes.common.domain.model
+package com.example.takenotes.takingnotes.domain.model
 
 data class Note(
     val id: Int,

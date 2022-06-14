@@ -1,7 +1,7 @@
 package com.example.takenotes.common.data.cache
 
-import com.example.takenotes.common.data.cache.daos.NotesDao
-import com.example.takenotes.common.data.cache.model.CachedNote
+import com.example.takenotes.takingnotes.data.cache.daos.NotesDao
+import com.example.takenotes.takingnotes.data.cache.model.CachedNote
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

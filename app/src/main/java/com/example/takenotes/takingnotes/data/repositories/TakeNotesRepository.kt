@@ -1,12 +1,11 @@
-package com.example.takenotes.common.data
+package com.example.takenotes.takingnotes.data.repositories
 
-import com.example.takenotes.common.data.api.model.JsonPlaceholderApi
-import com.example.takenotes.common.data.api.model.mappers.ApiNoteMapper
+import com.example.takenotes.takingnotes.data.api.JsonPlaceholderApi
+import com.example.takenotes.takingnotes.data.api.model.mappers.ApiNoteMapper
 import com.example.takenotes.common.data.cache.Cache
-import com.example.takenotes.common.data.cache.model.CachedNote
+import com.example.takenotes.takingnotes.data.cache.model.CachedNote
 import com.example.takenotes.common.domain.model.Exceptions
-import com.example.takenotes.common.domain.model.Note
-import com.example.takenotes.common.domain.repositories.NoteRepository
+import com.example.takenotes.takingnotes.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
@@ -17,7 +16,7 @@ class TakeNotesRepository @Inject constructor(
     private val api: JsonPlaceholderApi,
     private val cache: Cache,
     private val noteMapper: ApiNoteMapper
-): NoteRepository {
+): NotesRepository {
 
     override fun getNotes(): Flow<List<Note>> {
         return cache.getNotes()

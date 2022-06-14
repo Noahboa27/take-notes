@@ -3,12 +3,11 @@ package com.example.takenotes.common.data.di
 import com.example.takenotes.common.data.api.interceptor.LoggingInterceptor
 import com.example.takenotes.common.data.api.interceptor.NetworkStatusInterceptor
 import com.example.takenotes.common.data.api.model.ApiConstants
-import com.example.takenotes.common.data.api.model.JsonPlaceholderApi
+import com.example.takenotes.takingnotes.data.api.JsonPlaceholderApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.OkHttp
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

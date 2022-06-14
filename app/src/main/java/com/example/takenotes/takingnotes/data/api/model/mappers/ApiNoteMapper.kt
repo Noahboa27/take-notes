@@ -1,7 +1,8 @@
-package com.example.takenotes.common.data.api.model.mappers
+package com.example.takenotes.takingnotes.data.api.model.mappers
 
-import com.example.takenotes.common.data.api.model.ApiNote
-import com.example.takenotes.common.domain.model.Note
+import com.example.takenotes.common.data.api.model.mappers.ApiMapper
+import com.example.takenotes.takingnotes.data.api.model.ApiNote
+import com.example.takenotes.takingnotes.domain.model.Note
 import javax.inject.Inject
 
 class ApiNoteMapper @Inject constructor(): ApiMapper<ApiNote?, Note> {

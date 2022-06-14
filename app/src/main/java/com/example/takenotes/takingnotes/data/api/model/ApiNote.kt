@@ -1,4 +1,4 @@
-package com.example.takenotes.common.data.api.model
+package com.example.takenotes.takingnotes.data.api.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

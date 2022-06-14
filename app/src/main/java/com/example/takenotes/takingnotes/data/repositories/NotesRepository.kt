@@ -1,9 +1,9 @@
-package com.example.takenotes.common.domain.repositories
+package com.example.takenotes.takingnotes.data.repositories
 
-import com.example.takenotes.common.domain.model.Note
+import com.example.takenotes.takingnotes.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
-interface NoteRepository {
+interface NotesRepository {
     fun getNotes(): Flow<List<Note>>
     suspend fun requestForNotes(): List<Note>
     suspend fun storeNotes(notes: List<Note>)

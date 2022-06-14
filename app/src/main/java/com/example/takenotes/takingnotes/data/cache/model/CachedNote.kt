@@ -1,8 +1,8 @@
-package com.example.takenotes.common.data.cache.model
+package com.example.takenotes.takingnotes.data.cache.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.takenotes.common.domain.model.Note
+import com.example.takenotes.takingnotes.domain.model.Note
 
 @Entity(
     tableName = "notes"
